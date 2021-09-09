@@ -5,16 +5,14 @@ class MainArrayTest {
 
 @Test
 
-    void checkArray(){
+    void fillArrayTest(){
 
         //GIVEN
         String[] expected = {"Student 0", "Student 1"};
-
         //WHEN
-        String[] given = MainArray.fillArray();
-
+        String[] actual = MainArray.fillArray();
         //THEN
-        assertArrayEquals(expected, given);
+        assertArrayEquals(expected, actual);
     }
 
 }
